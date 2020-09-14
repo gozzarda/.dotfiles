@@ -1,6 +1,12 @@
+- defaults:
+    link:
+      relink: true
+      create: true
+
 - clean: ['~']
 
 - link:
-    ~/.gitconfig:
-    ~/.tmux.conf:
+    ~/.gitconfig: git/gitconfig
+    ~/.config/nvim/init.vim: neovim/init.vim
+    ~/.tmux.conf: tmux/tmux.conf
 
